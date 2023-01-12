@@ -4,58 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/shape_background"
-    tools:context=".GetNumberFragment">
+    tools:context=".Fragment_get_code">
 
-    <LinearLayout
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="580dp"
-        android:layout_marginStart="20sp"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20sp"
-            android:fontFamily="@font/outfit_medium"
-            android:text="@string/mobile_number"
-            android:textColor="@color/white"
-            android:textSize="30sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/outfit_regular"
-            android:text="@string/you_can_register_by_mobile_number"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="20sp"
-            android:background="@drawable/shepe_number_edit"
-            android:fontFamily="@font/outfit_medium"
-            android:text="@string/adsa"
-            android:textColor="#A7A7A7"
-            android:textSize="16sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20sp"
-            android:background="@drawable/shepe_number_edit"
-            android:drawableStart="@drawable/line"
-            android:fontFamily="@font/outfit_medium"
-            android:paddingStart="76dp"
-            android:textColor="#A7A7A7"
-            android:textSize="16sp"
-            tools:ignore="RtlSymmetry" />
-
-
-    </LinearLayout>
-
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="20sp"
+        android:background="@drawable/shepe_edit_code"
+        android:paddingStart="20sp"
+        android:paddingEnd="20sp"
+        android:textSize="20sp" />
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="300dp"
@@ -127,5 +86,6 @@
             android:background="@drawable/btn_return"
             tools:ignore="SpeakableTextPresentCheck" />
     </GridLayout>
+/>
 
 </RelativeLayout>
