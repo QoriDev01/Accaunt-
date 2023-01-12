@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_background"
+    android:gravity="bottom"
+    tools:context=".StartFragment">
+    <TextView
+        android:id="@+id/TextWelcomeStartFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Pubg Mobile\nAccount Trading"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/outfit_medium"
+        android:layout_gravity="center"
+        />
+    <ImageView
+        android:id="@+id/PicPubgMobileStartFragment"
+        android:layout_width="3250dp"
+        android:layout_height="400dp"
+        android:src="@drawable/image"
+        />
+</LinearLayout>
