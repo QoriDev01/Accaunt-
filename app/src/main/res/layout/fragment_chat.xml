@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_background"
+    tools:context=".Fragment_chat">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/edit_chat"
+        tools:itemCount="5"
+        tools:listitem="@layout/item" />
+
+
+    <EditText
+        android:id="@+id/edit_chat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:background="@drawable/shepe_number_edit"
+        android:drawableEnd="@drawable/ic_launcher_foreground"
+        android:hint="@string/xabar_jo_nating"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp" />
+
+
+</RelativeLayout>

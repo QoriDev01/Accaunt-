@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_background"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="137dp"
+        android:layout_height="66dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30sp"
+        android:background="@drawable/shepe_number_edit"
+        android:paddingStart="15dp"
+        android:text="salom"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:ignore="RtlSymmetry" />
+
+
+</RelativeLayout>
