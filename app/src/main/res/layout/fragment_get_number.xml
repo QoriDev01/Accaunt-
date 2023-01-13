@@ -1,131 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/shape_background"
+    android:layout_marginHorizontal="16dp"
+    android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".GetNumberFragment">
 
-    <LinearLayout
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/outfit_medium"
+        android:text="Enter your mobile number"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="580dp"
-        android:layout_marginStart="20sp"
-        android:orientation="vertical">
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="#EEEEEE"
+        android:fontFamily="@font/outfit_regular"
+        android:hint="+998"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:textColorHint="#7F7F7F" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/black">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20sp"
-            android:fontFamily="@font/outfit_medium"
-            android:text="@string/mobile_number"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/outfit_semi_bold"
+            android:text="Next"
             android:textColor="@color/white"
-            android:textSize="30sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/outfit_regular"
-            android:text="@string/you_can_register_by_mobile_number"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="20sp"
-            android:background="@drawable/shepe_number_edit"
-            android:fontFamily="@font/outfit_medium"
-            android:text="@string/adsa"
-            android:textColor="#A7A7A7"
             android:textSize="16sp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20sp"
-            android:background="@drawable/shepe_number_edit"
-            android:drawableStart="@drawable/line"
-            android:fontFamily="@font/outfit_medium"
-            android:paddingStart="76dp"
-            android:textColor="#A7A7A7"
-            android:textSize="16sp"
-            tools:ignore="RtlSymmetry" />
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/ic_next" />
+    </RelativeLayout>
 
-
-    </LinearLayout>
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="5dp"
-        android:columnCount="3"
-        android:foregroundGravity="center">
-
-        <androidx.appcompat.widget.AppCompatButton
-            style="@style/FirstSection"
-
-            android:background="@drawable/btn_one"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            style="@style/SecondSection"
-            android:background="@drawable/btn_two"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            style="@style/ThirdSection"
-            android:background="@drawable/btn_three"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            style="@style/FirstSection"
-            android:background="@drawable/btn_four"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            style="@style/SecondSection"
-            android:background="@drawable/btn_five"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            style="@style/ThirdSection"
-            android:background="@drawable/btn_six"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            style="@style/FirstSection"
-            android:background="@drawable/btn_seven"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            style="@style/SecondSection"
-            android:background="@drawable/btn_eight"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            style="@style/ThirdSection"
-            android:background="@drawable/btn_nine"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            style="@style/FirstSection"
-            android:background="@drawable/btn_off"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            style="@style/SecondSection"
-            android:background="@drawable/btn_zero"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            style="@style/ThirdSection"
-            android:background="@drawable/btn_return"
-            tools:ignore="SpeakableTextPresentCheck" />
-    </GridLayout>
-
-</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfit_light"
+        android:text="By proceeding, you consent to get calls, Whatsapp or SMS messages, including by automated means, from uber and its affiliates to the number provided."
+        android:textColor="#888888"
+        android:textSize="12sp" />
+</LinearLayout>
