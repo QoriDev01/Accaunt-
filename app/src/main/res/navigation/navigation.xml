@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/startFragment">
+    app:startDestination="@id/fragment_get_code">
 
     <fragment
         android:id="@+id/startFragment"
@@ -15,4 +15,9 @@
         android:name="com.example.accounttrading.GetNumberFragment"
         android:label="fragment_get_number"
         tools:layout="@layout/fragment_get_number" />
+    <fragment
+        android:id="@+id/fragment_get_code"
+        android:name="com.example.accounttrading.Fragment_get_code"
+        android:label="fragment_get_code"
+        tools:layout="@layout/fragment_get_code" />
 </navigation>

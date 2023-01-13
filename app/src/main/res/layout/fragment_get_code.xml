@@ -14,8 +14,7 @@
         android:background="@drawable/shepe_edit_code"
         android:paddingStart="20sp"
         android:paddingEnd="20sp"
-        android:hint="Esingdan chiqibdi ku
-"
+        android:hint="Esingdan chiqibdi ku"
         android:textSize="20sp"
         tools:ignore="SpeakableTextPresentCheck" />
     <GridLayout
